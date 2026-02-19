@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Blog — Blue Earth Foundation</title>
+<link rel="stylesheet" href="../shared.css">
+
+<style>
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.revealed{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}
+</style>
+
+
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <a href="../index.html" style="display:flex;align-items:center;gap:.6rem;text-decoration:none">
+      <span class="logo-icon">◈</span>
+      <span class="logo-text">BLUE EARTH</span>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../index.html#mission">Mission</a></li>
+    <li><a href="../index.html#impact">Impact</a></li>
+    <li><a href="gallery-page.html">Gallery</a></li>
+    <li><a href="donate-page.html" class="nav-cta">Donate Now</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#mission">Mission</a>
+  <a href="../index.html#impact">Impact</a>
+  <a href="gallery-page.html">Gallery</a>
+  <a href="ocean-facts.html">Ocean Facts</a>
+  <a href="donate-page.html" class="mobile-cta">Donate Now</a>
+</div>
+
+
+<div class="page-banner">
+  <canvas id="bannerCanvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none"></canvas>
+  <span class="page-banner-tag">Stories & Science</span>
+  <h1>Voices of<br><em>the Deep</em></h1>
+  <p>Articles, field reports, and science updates from the front lines of ocean conservation.</p>
+</div>
+
+
+<style>
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1100px;margin:0 auto}
+.blog-card{background:rgba(5,21,37,.6);border:1px solid rgba(43,188,212,.1);padding:2rem;border-radius:4px;transition:all .35s;position:relative;overflow:hidden;cursor:pointer}
+.blog-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--azure),var(--cyan));transform:scaleX(0);transition:transform .35s}
+.blog-card:hover{transform:translateY(-5px);border-color:rgba(43,188,212,.25);background:rgba(10,37,64,.7)}
+.blog-card:hover::after{transform:scaleX(1)}
+.blog-cat{font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--cyan);margin-bottom:.8rem}
+.blog-icon{font-size:2.2rem;margin-bottom:.8rem;display:block}
+.blog-card h3{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--pearl);margin-bottom:.7rem;line-height:1.3}
+.blog-card p{font-size:.82rem;line-height:1.7;color:var(--muted);margin-bottom:1.2rem}
+.read-more{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);text-decoration:none;transition:letter-spacing .3s}
+.read-more:hover{letter-spacing:.3em}
+@media(max-width:900px){.blog-grid{grid-template-columns:1fr}}
+@media(min-width:560px) and (max-width:900px){.blog-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+<div class="page-content" style="padding-top:3rem">
+  <div class="blog-grid">
+  <div class="blog-card reveal">
+    <div class="blog-cat">Conservation · February 2025</div>
+    <div class="blog-icon">🐋</div>
+    <h3>Breaking: Humpback Whale Population Rebounds</h3>
+    <p>After decades of decline, new data from NOAA shows humpback whale populations have recovered to pre-commercial whaling levels in three ocean basins — a landmark conservation success story.</p>
+    <a href="#" class="read-more">Read Article →</a>
+  </div>
+  <div class="blog-card reveal">
+    <div class="blog-cat">Science · January 2025</div>
+    <div class="blog-icon">🪸</div>
+    <h3>How We're Growing Coral Faster Than Ever</h3>
+    <p>Our research team has pioneered a micro-fragmentation technique that grows coral 40× faster than natural reef growth. Here's how it works and what it means for reef restoration.</p>
+    <a href="#" class="read-more">Read Article →</a>
+  </div>
+  <div class="blog-card reveal">
+    <div class="blog-cat">Policy · January 2025</div>
+    <div class="blog-icon">♻</div>
+    <h3>The Truth About Ocean Plastic Recycling</h3>
+    <p>Not all plastic can be recycled. We explore which types enter the ocean, why current collection systems fail, and the policy changes that could turn the tide.</p>
+    <a href="#" class="read-more">Read Article →</a>
+  </div>
+  <div class="blog-card reveal">
+    <div class="blog-cat">Field Reports · December 2024</div>
+    <div class="blog-icon">🤿</div>
+    <h3>A Day With Our Reef Monitoring Team</h3>
+    <p>We spent 72 hours with marine biologists surveying the health of the Great Barrier Reef. What they found was both heartbreaking and inspiring.</p>
+    <a href="#" class="read-more">Read Article →</a>
+  </div>
+  <div class="blog-card reveal">
+    <div class="blog-cat">Science · December 2024</div>
+    <div class="blog-icon">🌊</div>
+    <h3>The Southern Ocean: Earth's Last Ocean Frontier</h3>
+    <p>Encircling Antarctica, the Southern Ocean was only officially recognised in 2021. It is one of the most ecologically important and least understood bodies of water on Earth.</p>
+    <a href="#" class="read-more">Read Article →</a>
+  </div>
+  <div class="blog-card reveal">
+    <div class="blog-cat">Stories · November 2024</div>
+    <div class="blog-icon">👧</div>
+    <h3>Meet the 16-Year-Old Who Cleaned Her Entire Coastline</h3>
+    <p>Maya from the Philippines spent six months organising beach cleanups with her school friends. They removed over 8 tonnes of plastic — and inspired a national movement.</p>
+    <a href="#" class="read-more">Read Article →</a>
+  </div></div>
+  <div style="text-align:center;margin-top:3rem">
+    <button class="btn-ghost">Load More Articles</button>
+  </div>
+</div>
+
+
+
+<footer class="site-footer">
+  <div class="footer-wave-wrap">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="height:60px">
+      <path d="M0 40 C360 0,720 80,1080 40 C1260 20,1380 60,1440 40 L1440 80 L0 80 Z" fill="rgba(14,79,110,0.15)"/>
+    </svg>
+  </div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-text">◈ BLUE EARTH</div>
+      <p class="footer-brand-desc">Fighting for the ocean since 2018. 501(c)(3) nonprofit registered in California.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-lnk">Twitter</a>
+        <a href="#" class="social-lnk">Instagram</a>
+        <a href="#" class="social-lnk">YouTube</a>
+        <a href="#" class="social-lnk">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="../index.html">Home</a>
+        <a href="index.html#mission">Mission</a>
+        <a href="index.html#impact">Impact</a>
+        <a href="gallery-page.html">Gallery</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="ocean-facts.html">Ocean Facts</a>
+        <a href="blog.html">Blog</a>
+        <a href="research.html">Research</a>
+        <a href="press.html">Press</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="corporate.html">Corporate</a>
+        <a href="contact.html">Contact</a>
+        <a href="newsletter.html">Newsletter</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-bar">
+    <span>© 2025 Blue Earth Foundation. All rights reserved.</span>
+    <span><a href="privacy.html" style="color:inherit;text-decoration:none">Privacy</a> · <a href="terms.html" style="color:inherit;text-decoration:none">Terms</a> · <a href="impact-report.html" style="color:inherit;text-decoration:none">Impact Report</a></span>
+  </div>
+  <div class="footer-fish-anim">
+    <svg viewBox="0 0 60 30" fill="none"><path d="M8 15 C15 8,40 7,52 15 C40 23,15 22,8 15 Z" fill="rgba(43,188,212,0.3)"/><path d="M8 15 L0 9 L0 21 Z" fill="rgba(26,127,168,0.35)"/><circle cx="43" cy="14" r="3" fill="rgba(77,232,194,0.6)"/><circle cx="43" cy="14" r="1" fill="rgba(2,13,26,0.8)"/></svg>
+  </div>
+</footer>
+
+<script src="../shared.js" defer></script>
+</body>
+</html>

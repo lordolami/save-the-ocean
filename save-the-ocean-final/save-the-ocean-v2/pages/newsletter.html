@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Newsletter — Blue Earth Foundation</title>
+<link rel="stylesheet" href="../shared.css">
+
+<style>
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.revealed{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}
+</style>
+
+
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <a href="../index.html" style="display:flex;align-items:center;gap:.6rem;text-decoration:none">
+      <span class="logo-icon">◈</span>
+      <span class="logo-text">BLUE EARTH</span>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../index.html#mission">Mission</a></li>
+    <li><a href="../index.html#impact">Impact</a></li>
+    <li><a href="gallery-page.html">Gallery</a></li>
+    <li><a href="donate-page.html" class="nav-cta">Donate Now</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#mission">Mission</a>
+  <a href="../index.html#impact">Impact</a>
+  <a href="gallery-page.html">Gallery</a>
+  <a href="ocean-facts.html">Ocean Facts</a>
+  <a href="donate-page.html" class="mobile-cta">Donate Now</a>
+</div>
+
+
+<div class="page-banner">
+  <canvas id="bannerCanvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none"></canvas>
+  <span class="page-banner-tag">Stay Connected</span>
+  <h1>Tides of<br><em>Change</em></h1>
+  <p>Our monthly newsletter delivers ocean science, conservation wins, and ways to take action — straight to your inbox.</p>
+</div>
+
+
+<div class="page-content narrow">
+
+  <div style="text-align:center;margin-bottom:4rem">
+    <div style="font-size:5rem;margin-bottom:1.5rem">🌊</div>
+    <p class="lead">Join 340,000 readers who start every month with the most important stories from the ocean world.</p>
+  </div>
+
+  <div class="grid-3" style="margin-bottom:4rem">
+    <div class="card reveal reveal-delay-1" style="text-align:center">
+      <span class="card-icon">📖</span>
+      <h3>Deep Dives</h3>
+      <p>Long-form features on the biggest ocean stories, written by scientists and journalists who've actually been there.</p>
+    </div>
+    <div class="card reveal reveal-delay-2" style="text-align:center">
+      <span class="card-icon">📊</span>
+      <h3>Science Briefs</h3>
+      <p>The latest research findings, translated from academic papers into clear, compelling summaries anyone can understand.</p>
+    </div>
+    <div class="card reveal reveal-delay-3" style="text-align:center">
+      <span class="card-icon">✊</span>
+      <h3>Action Alerts</h3>
+      <p>Urgent calls to action when critical votes, policy windows, or conservation opportunities arise — so you can act at the right moment.</p>
+    </div>
+  </div>
+
+  <div style="background:rgba(5,21,37,.7);border:1px solid rgba(43,188,212,.2);padding:3rem;border-radius:4px" class="reveal">
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--pearl);margin-bottom:2rem;text-align:center">Subscribe to <em style='font-style:italic;background:linear-gradient(90deg,var(--cyan),var(--seafoam));-webkit-background-clip:text;-webkit-text-fill-color:transparent'>Tides of Change</em></h3>
+    <div class="form-row">
+      <div class="form-group"><label>First Name</label><input type="text" placeholder="Your first name"></div>
+      <div class="form-group"><label>Email Address</label><input type="email" placeholder="you@example.com"></div>
+    </div>
+    <div class="form-group">
+      <label>Interests (select all that apply)</label>
+      <div style="display:flex;flex-wrap:wrap;gap:.8rem;margin-top:.5rem">
+        <label style="display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--muted);cursor:pointer"><input type="checkbox" checked style="accent-color:var(--cyan)"> Ocean Science</label>
+        <label style="display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--muted);cursor:pointer"><input type="checkbox" checked style="accent-color:var(--cyan)"> Conservation News</label>
+        <label style="display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--muted);cursor:pointer"><input type="checkbox" style="accent-color:var(--cyan)"> Volunteer Opportunities</label>
+        <label style="display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--muted);cursor:pointer"><input type="checkbox" style="accent-color:var(--cyan)"> Policy & Advocacy</label>
+        <label style="display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--muted);cursor:pointer"><input type="checkbox" style="accent-color:var(--cyan)"> Fundraising Events</label>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:1.5rem">
+      <button class="btn-primary" onclick="alert('Welcome to Tides of Change! Check your inbox for a confirmation email.')">Subscribe — It\'s Free</button>
+      <p style="font-size:.65rem;color:var(--muted);margin-top:1rem">Monthly · No spam · Unsubscribe anytime · Your data stays with us</p>
+    </div>
+  </div>
+
+  <div style="margin-top:4rem">
+    <span class="sec-tag">Past Issues</span>
+    <h2 class="sec-title">Recent <em>Issues</em></h2>
+    <div class="sec-divider"></div>
+    <div style="display:flex;flex-direction:column;gap:.8rem">
+      <div style="padding:1.2rem 1.5rem;background:rgba(5,21,37,.4);border:1px solid rgba(43,188,212,.1);border-radius:4px;display:flex;justify-content:space-between;align-items:center">
+        <div><span style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan)">February 2025</span><p style="color:var(--foam);margin-top:.2rem;font-size:.9rem">Whale comeback, coral milestones, and the treaty that could save the high seas</p></div>
+        <a href="#" style="color:var(--cyan);text-decoration:none;font-size:.65rem;letter-spacing:.15em;white-space:nowrap;margin-left:1rem">Read →</a>
+      </div>
+      <div style="padding:1.2rem 1.5rem;background:rgba(5,21,37,.4);border:1px solid rgba(43,188,212,.1);border-radius:4px;display:flex;justify-content:space-between;align-items:center">
+        <div><span style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan)">January 2025</span><p style="color:var(--foam);margin-top:.2rem;font-size:.9rem">Ocean plastic: why recycling alone will never be enough</p></div>
+        <a href="#" style="color:var(--cyan);text-decoration:none;font-size:.65rem;letter-spacing:.15em;white-space:nowrap;margin-left:1rem">Read →</a>
+      </div>
+      <div style="padding:1.2rem 1.5rem;background:rgba(5,21,37,.4);border:1px solid rgba(43,188,212,.1);border-radius:4px;display:flex;justify-content:space-between;align-items:center">
+        <div><span style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan)">December 2024</span><p style="color:var(--foam);margin-top:.2rem;font-size:.9rem">2024 Year in Review: our biggest wins, losses, and what's ahead</p></div>
+        <a href="#" style="color:var(--cyan);text-decoration:none;font-size:.65rem;letter-spacing:.15em;white-space:nowrap;margin-left:1rem">Read →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="site-footer">
+  <div class="footer-wave-wrap">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="height:60px">
+      <path d="M0 40 C360 0,720 80,1080 40 C1260 20,1380 60,1440 40 L1440 80 L0 80 Z" fill="rgba(14,79,110,0.15)"/>
+    </svg>
+  </div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-text">◈ BLUE EARTH</div>
+      <p class="footer-brand-desc">Fighting for the ocean since 2018. 501(c)(3) nonprofit registered in California.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-lnk">Twitter</a>
+        <a href="#" class="social-lnk">Instagram</a>
+        <a href="#" class="social-lnk">YouTube</a>
+        <a href="#" class="social-lnk">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="../index.html">Home</a>
+        <a href="index.html#mission">Mission</a>
+        <a href="index.html#impact">Impact</a>
+        <a href="gallery-page.html">Gallery</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="ocean-facts.html">Ocean Facts</a>
+        <a href="blog.html">Blog</a>
+        <a href="research.html">Research</a>
+        <a href="press.html">Press</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="corporate.html">Corporate</a>
+        <a href="contact.html">Contact</a>
+        <a href="newsletter.html">Newsletter</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-bar">
+    <span>© 2025 Blue Earth Foundation. All rights reserved.</span>
+    <span><a href="privacy.html" style="color:inherit;text-decoration:none">Privacy</a> · <a href="terms.html" style="color:inherit;text-decoration:none">Terms</a> · <a href="impact-report.html" style="color:inherit;text-decoration:none">Impact Report</a></span>
+  </div>
+  <div class="footer-fish-anim">
+    <svg viewBox="0 0 60 30" fill="none"><path d="M8 15 C15 8,40 7,52 15 C40 23,15 22,8 15 Z" fill="rgba(43,188,212,0.3)"/><path d="M8 15 L0 9 L0 21 Z" fill="rgba(26,127,168,0.35)"/><circle cx="43" cy="14" r="3" fill="rgba(77,232,194,0.6)"/><circle cx="43" cy="14" r="1" fill="rgba(2,13,26,0.8)"/></svg>
+  </div>
+</footer>
+
+<script src="../shared.js" defer></script>
+</body>
+</html>

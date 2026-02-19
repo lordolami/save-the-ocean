@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Research — Blue Earth Foundation</title>
+<link rel="stylesheet" href="../shared.css">
+
+<style>
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.revealed{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}
+</style>
+
+
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <a href="../index.html" style="display:flex;align-items:center;gap:.6rem;text-decoration:none">
+      <span class="logo-icon">◈</span>
+      <span class="logo-text">BLUE EARTH</span>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../index.html#mission">Mission</a></li>
+    <li><a href="../index.html#impact">Impact</a></li>
+    <li><a href="gallery-page.html">Gallery</a></li>
+    <li><a href="donate-page.html" class="nav-cta">Donate Now</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#mission">Mission</a>
+  <a href="../index.html#impact">Impact</a>
+  <a href="gallery-page.html">Gallery</a>
+  <a href="ocean-facts.html">Ocean Facts</a>
+  <a href="donate-page.html" class="mobile-cta">Donate Now</a>
+</div>
+
+
+<div class="page-banner">
+  <canvas id="bannerCanvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none"></canvas>
+  <span class="page-banner-tag">Science & Data</span>
+  <h1>Our Research<br><em>Programs</em></h1>
+  <p>Peer-reviewed science driving real-world conservation outcomes across five ocean basins.</p>
+</div>
+
+
+<div class="page-content">
+
+  <p class="lead reveal">Blue Earth partners with 40+ universities and research institutions worldwide. Our science informs policy, guides restoration efforts, and expands humanity's understanding of the ocean.</p>
+
+  <div class="grid-2" style="margin:3rem 0">
+    <div class="card reveal reveal-delay-1">
+      <span class="card-icon">🪸</span>
+      <h3>Coral Micro-Fragmentation Lab</h3>
+      <p>Our partnership with the Mote Marine Laboratory has produced a patented technique growing coral 40× faster than natural reef growth, now deployed across 12 reef systems globally.</p>
+      <div style="margin-top:1.2rem;font-size:.68rem;letter-spacing:.2em;color:var(--cyan);text-transform:uppercase">Active · 12 Sites · 4 Countries</div>
+    </div>
+    <div class="card reveal reveal-delay-2">
+      <span class="card-icon">📡</span>
+      <h3>Deep-Sea Acoustic Monitoring</h3>
+      <p>A network of 48 hydrophones spanning the Pacific detects cetacean communication, ship traffic, and seismic events in real time — the world's largest passive ocean sound monitoring network.</p>
+      <div style="margin-top:1.2rem;font-size:.68rem;letter-spacing:.2em;color:var(--cyan);text-transform:uppercase">Active · Pacific Basin · Est. 2021</div>
+    </div>
+    <div class="card reveal reveal-delay-1">
+      <span class="card-icon">🧬</span>
+      <h3>Marine Biodiversity Genomics</h3>
+      <p>Using environmental DNA (eDNA) sampling from water, we can identify which species are present in an ecosystem without capturing a single animal — revolutionising how we survey marine biodiversity.</p>
+      <div style="margin-top:1.2rem;font-size:.68rem;letter-spacing:.2em;color:var(--cyan);text-transform:uppercase">Active · Global · 800+ Samples</div>
+    </div>
+    <div class="card reveal reveal-delay-2">
+      <span class="card-icon">🌡️</span>
+      <h3>Ocean Heat Content Study</h3>
+      <p>Long-term temperature profiling across all five ocean basins, contributing to IPCC climate models and helping predict coral bleaching events 8–12 weeks in advance.</p>
+      <div style="margin-top:1.2rem;font-size:.68rem;letter-spacing:.2em;color:var(--cyan);text-transform:uppercase">Active · 5 Basins · IPCC Partner</div>
+    </div>
+  </div>
+
+  <div style="margin:4rem 0">
+    <span class="sec-tag">Publications</span>
+    <h2 class="sec-title">Recent <em>Papers</em></h2>
+    <div class="sec-divider"></div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:1rem">
+    <div style="padding:1.5rem 2rem;background:rgba(5,21,37,.5);border:1px solid rgba(43,188,212,.1);border-radius:4px;display:flex;gap:1.5rem;align-items:flex-start" class="reveal">
+      <div style="font-size:1.5rem;flex-shrink:0">📄</div>
+      <div>
+        <div style="font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--cyan);margin-bottom:.3rem">Nature Climate Change · 2024</div>
+        <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--pearl);margin-bottom:.4rem">Accelerated coral bleaching under 1.5°C warming scenarios</h4>
+        <p style="font-size:.78rem;color:var(--muted)">Hughes, T., Morrison, K., Reef, A. et al. Blue Earth Research Institute, James Cook University, AIMS.</p>
+      </div>
+    </div>
+    <div style="padding:1.5rem 2rem;background:rgba(5,21,37,.5);border:1px solid rgba(43,188,212,.1);border-radius:4px;display:flex;gap:1.5rem;align-items:flex-start" class="reveal">
+      <div style="font-size:1.5rem;flex-shrink:0">📄</div>
+      <div>
+        <div style="font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--cyan);margin-bottom:.3rem">Science · 2024</div>
+        <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--pearl);margin-bottom:.4rem">Global eDNA sampling reveals hidden biodiversity hotspots in the deep ocean</h4>
+        <p style="font-size:.78rem;color:var(--muted)">Chen, L., Okafor, R., Santos, M. et al. Blue Earth Research Institute, Scripps Institution of Oceanography.</p>
+      </div>
+    </div>
+    <div style="padding:1.5rem 2rem;background:rgba(5,21,37,.5);border:1px solid rgba(43,188,212,.1);border-radius:4px;display:flex;gap:1.5rem;align-items:flex-start" class="reveal">
+      <div style="font-size:1.5rem;flex-shrink:0">📄</div>
+      <div>
+        <div style="font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--cyan);margin-bottom:.3rem">PNAS · 2023</div>
+        <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--pearl);margin-bottom:.4rem">Microplastic ingestion rates across five trophic levels in North Pacific ecosystems</h4>
+        <p style="font-size:.78rem;color:var(--muted)">Petrov, I., Kimura, H., Bautista, C. et al. Blue Earth Research Institute, University of Hawaii.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:4rem" class="reveal">
+    <a href="#" class="btn-primary" style="margin-right:1rem">Download Full Research Index</a>
+    <a href="contact.html" class="btn-ghost">Research Partnerships</a>
+  </div>
+</div>
+
+
+
+<footer class="site-footer">
+  <div class="footer-wave-wrap">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="height:60px">
+      <path d="M0 40 C360 0,720 80,1080 40 C1260 20,1380 60,1440 40 L1440 80 L0 80 Z" fill="rgba(14,79,110,0.15)"/>
+    </svg>
+  </div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-text">◈ BLUE EARTH</div>
+      <p class="footer-brand-desc">Fighting for the ocean since 2018. 501(c)(3) nonprofit registered in California.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-lnk">Twitter</a>
+        <a href="#" class="social-lnk">Instagram</a>
+        <a href="#" class="social-lnk">YouTube</a>
+        <a href="#" class="social-lnk">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="../index.html">Home</a>
+        <a href="index.html#mission">Mission</a>
+        <a href="index.html#impact">Impact</a>
+        <a href="gallery-page.html">Gallery</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="ocean-facts.html">Ocean Facts</a>
+        <a href="blog.html">Blog</a>
+        <a href="research.html">Research</a>
+        <a href="press.html">Press</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="corporate.html">Corporate</a>
+        <a href="contact.html">Contact</a>
+        <a href="newsletter.html">Newsletter</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-bar">
+    <span>© 2025 Blue Earth Foundation. All rights reserved.</span>
+    <span><a href="privacy.html" style="color:inherit;text-decoration:none">Privacy</a> · <a href="terms.html" style="color:inherit;text-decoration:none">Terms</a> · <a href="impact-report.html" style="color:inherit;text-decoration:none">Impact Report</a></span>
+  </div>
+  <div class="footer-fish-anim">
+    <svg viewBox="0 0 60 30" fill="none"><path d="M8 15 C15 8,40 7,52 15 C40 23,15 22,8 15 Z" fill="rgba(43,188,212,0.3)"/><path d="M8 15 L0 9 L0 21 Z" fill="rgba(26,127,168,0.35)"/><circle cx="43" cy="14" r="3" fill="rgba(77,232,194,0.6)"/><circle cx="43" cy="14" r="1" fill="rgba(2,13,26,0.8)"/></svg>
+  </div>
+</footer>
+
+<script src="../shared.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Corporate Partnerships — Blue Earth Foundation</title>
+<link rel="stylesheet" href="../shared.css">
+
+<style>
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.revealed{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}
+</style>
+
+
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <a href="../index.html" style="display:flex;align-items:center;gap:.6rem;text-decoration:none">
+      <span class="logo-icon">◈</span>
+      <span class="logo-text">BLUE EARTH</span>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../index.html#mission">Mission</a></li>
+    <li><a href="../index.html#impact">Impact</a></li>
+    <li><a href="gallery-page.html">Gallery</a></li>
+    <li><a href="donate-page.html" class="nav-cta">Donate Now</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#mission">Mission</a>
+  <a href="../index.html#impact">Impact</a>
+  <a href="gallery-page.html">Gallery</a>
+  <a href="ocean-facts.html">Ocean Facts</a>
+  <a href="donate-page.html" class="mobile-cta">Donate Now</a>
+</div>
+
+
+<div class="page-banner">
+  <canvas id="bannerCanvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none"></canvas>
+  <span class="page-banner-tag">For Business</span>
+  <h1>Partner With<br><em>the Ocean</em></h1>
+  <p>Strategic partnerships that drive measurable environmental impact and business value.</p>
+</div>
+
+
+<div class="page-content">
+
+  <p class="lead reveal">Over 120 companies — from startups to Fortune 500 — partner with Blue Earth to fulfil sustainability commitments, engage employees, and drive real-world ocean impact.</p>
+
+  <div class="stat-row reveal">
+    <div class="stat-item"><div class="num">120+</div><span class="lbl">Corporate partners</span></div>
+    <div class="stat-item"><div class="num">$18M</div><span class="lbl">Corporate funding raised</span></div>
+    <div class="stat-item"><div class="num">40K</div><span class="lbl">Employees engaged</span></div>
+    <div class="stat-item"><div class="num">100%</div><span class="lbl">Directly to programs</span></div>
+  </div>
+
+  <div class="grid-3" style="margin:3rem 0">
+    <div class="card reveal reveal-delay-1">
+      <span class="card-icon">🤝</span>
+      <h3>Strategic Partnership</h3>
+      <p>Multi-year collaboration agreements with co-branded campaigns, shared impact reporting, and employee engagement programs. Starting at $50,000/year.</p>
+    </div>
+    <div class="card reveal reveal-delay-2">
+      <span class="card-icon">🌊</span>
+      <h3>Adopt a Program</h3>
+      <p>Sponsor a specific conservation program — a reef nursery, a species monitoring effort, or a coastal cleanup initiative — with full naming rights and reporting.</p>
+    </div>
+    <div class="card reveal reveal-delay-3">
+      <span class="card-icon">👥</span>
+      <h3>Employee Engagement</h3>
+      <p>Team cleanup events, virtual ocean education sessions, and volunteer days that build culture and fulfil CSR goals. Available globally for groups of 10–500+.</p>
+    </div>
+    <div class="card reveal reveal-delay-1">
+      <span class="card-icon">📜</span>
+      <h3>Ocean Positive Certification</h3>
+      <p>Earn a verified Ocean Positive badge for your products and brand by funding measurable plastic removal or reef restoration equivalent to your footprint.</p>
+    </div>
+    <div class="card reveal reveal-delay-2">
+      <span class="card-icon">📊</span>
+      <h3>Sustainability Consulting</h3>
+      <p>Our scientists help you measure your ocean impact, identify risks in your supply chain, and design a credible, science-based marine sustainability strategy.</p>
+    </div>
+    <div class="card reveal reveal-delay-3">
+      <span class="card-icon">🎤</span>
+      <h3>Speaking & Events</h3>
+      <p>Bring Blue Earth scientists and conservationists to your conferences, board retreats, and client events for inspiring, research-backed ocean presentations.</p>
+    </div>
+  </div>
+
+  <div style="max-width:700px;margin:4rem auto 0">
+    <span class="sec-tag">Get Started</span>
+    <h2 class="sec-title">Let's Build Something <em>Meaningful</em></h2>
+    <div class="sec-divider"></div>
+    <div class="form-row">
+      <div class="form-group"><label>Company Name</label><input type="text" placeholder="Your company"></div>
+      <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full name"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Email</label><input type="email" placeholder="work@company.com"></div>
+      <div class="form-group"><label>Partnership Interest</label>
+        <select><option>Strategic Partnership</option><option>Adopt a Program</option><option>Employee Engagement</option><option>Ocean Positive Certification</option><option>Consulting</option><option>Other</option></select>
+      </div>
+    </div>
+    <div class="form-group"><label>Tell Us About Your Goals</label><textarea placeholder="What sustainability goals are you working toward?"></textarea></div>
+    <button class="btn-primary" onclick="alert('Thank you! Our partnerships team will be in touch within 2 business days.')">Request a Conversation</button>
+  </div>
+</div>
+
+
+
+<footer class="site-footer">
+  <div class="footer-wave-wrap">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="height:60px">
+      <path d="M0 40 C360 0,720 80,1080 40 C1260 20,1380 60,1440 40 L1440 80 L0 80 Z" fill="rgba(14,79,110,0.15)"/>
+    </svg>
+  </div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-text">◈ BLUE EARTH</div>
+      <p class="footer-brand-desc">Fighting for the ocean since 2018. 501(c)(3) nonprofit registered in California.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-lnk">Twitter</a>
+        <a href="#" class="social-lnk">Instagram</a>
+        <a href="#" class="social-lnk">YouTube</a>
+        <a href="#" class="social-lnk">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="../index.html">Home</a>
+        <a href="index.html#mission">Mission</a>
+        <a href="index.html#impact">Impact</a>
+        <a href="gallery-page.html">Gallery</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="ocean-facts.html">Ocean Facts</a>
+        <a href="blog.html">Blog</a>
+        <a href="research.html">Research</a>
+        <a href="press.html">Press</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="corporate.html">Corporate</a>
+        <a href="contact.html">Contact</a>
+        <a href="newsletter.html">Newsletter</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-bar">
+    <span>© 2025 Blue Earth Foundation. All rights reserved.</span>
+    <span><a href="privacy.html" style="color:inherit;text-decoration:none">Privacy</a> · <a href="terms.html" style="color:inherit;text-decoration:none">Terms</a> · <a href="impact-report.html" style="color:inherit;text-decoration:none">Impact Report</a></span>
+  </div>
+  <div class="footer-fish-anim">
+    <svg viewBox="0 0 60 30" fill="none"><path d="M8 15 C15 8,40 7,52 15 C40 23,15 22,8 15 Z" fill="rgba(43,188,212,0.3)"/><path d="M8 15 L0 9 L0 21 Z" fill="rgba(26,127,168,0.35)"/><circle cx="43" cy="14" r="3" fill="rgba(77,232,194,0.6)"/><circle cx="43" cy="14" r="1" fill="rgba(2,13,26,0.8)"/></svg>
+  </div>
+</footer>
+
+<script src="../shared.js" defer></script>
+</body>
+</html>

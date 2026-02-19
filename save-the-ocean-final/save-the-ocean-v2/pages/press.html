@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Press — Blue Earth Foundation</title>
+<link rel="stylesheet" href="../shared.css">
+
+<style>
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.revealed{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}
+</style>
+
+
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <a href="../index.html" style="display:flex;align-items:center;gap:.6rem;text-decoration:none">
+      <span class="logo-icon">◈</span>
+      <span class="logo-text">BLUE EARTH</span>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../index.html#mission">Mission</a></li>
+    <li><a href="../index.html#impact">Impact</a></li>
+    <li><a href="gallery-page.html">Gallery</a></li>
+    <li><a href="donate-page.html" class="nav-cta">Donate Now</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#mission">Mission</a>
+  <a href="../index.html#impact">Impact</a>
+  <a href="gallery-page.html">Gallery</a>
+  <a href="ocean-facts.html">Ocean Facts</a>
+  <a href="donate-page.html" class="mobile-cta">Donate Now</a>
+</div>
+
+
+<div class="page-banner">
+  <canvas id="bannerCanvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none"></canvas>
+  <span class="page-banner-tag">Media Coverage</span>
+  <h1>Blue Earth<br><em>In the News</em></h1>
+  <p>Coverage, awards, and media resources for journalists and partners.</p>
+</div>
+
+
+<div class="page-content">
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:4rem">
+    <div class="card reveal"><span class="card-icon">🏆</span><h3>Awards</h3><p>Winner of 14 international conservation and innovation awards since 2018, including the UN Environment Award and the Goldman Environmental Prize.</p></div>
+    <div class="card reveal reveal-delay-1"><span class="card-icon">📰</span><h3>Media Kit</h3><p>Download logos, photos, leadership bios, fact sheets, and approved messaging in our comprehensive press kit — updated quarterly.</p><a href="#" class="btn-ghost" style="margin-top:1rem;font-size:.65rem">Download Kit</a></div>
+    <div class="card reveal reveal-delay-2"><span class="card-icon">📞</span><h3>Press Inquiries</h3><p>Our communications team responds to all press inquiries within 24 hours. For urgent requests, call our dedicated media line.</p><p style="color:var(--cyan);margin-top:.8rem;font-size:.8rem">press@blueearth.org</p></div>
+  </div>
+  <span class="sec-tag">Recent Coverage</span>
+  <h2 class="sec-title">Featured <em>In</em></h2>
+  <div class="sec-divider"></div>
+  <div style="display:flex;flex-direction:column;gap:1rem;margin-top:2rem">
+  <div style="padding:1.5rem 2rem;background:rgba(5,21,37,.5);border:1px solid rgba(43,188,212,.1);border-radius:4px;display:flex;align-items:center;gap:2rem;transition:border-color .3s" class="reveal">
+    <div style="font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cyan);min-width:120px;flex-shrink:0">BBC<br><span style="color:var(--muted);font-size:.58rem">February 2025</span></div>
+    <p style="font-size:.9rem;color:var(--foam);font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.4">Blue Earth's coral nursery named among the 10 most important conservation projects of the decade</p>
+    <a href="#" style="margin-left:auto;color:var(--cyan);text-decoration:none;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;white-space:nowrap;flex-shrink:0">Read →</a>
+  </div>
+  <div style="padding:1.5rem 2rem;background:rgba(5,21,37,.5);border:1px solid rgba(43,188,212,.1);border-radius:4px;display:flex;align-items:center;gap:2rem;transition:border-color .3s" class="reveal">
+    <div style="font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cyan);min-width:120px;flex-shrink:0">The Guardian<br><span style="color:var(--muted);font-size:.58rem">January 2025</span></div>
+    <p style="font-size:.9rem;color:var(--foam);font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.4">How one foundation is changing the way we think about ocean plastic</p>
+    <a href="#" style="margin-left:auto;color:var(--cyan);text-decoration:none;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;white-space:nowrap;flex-shrink:0">Read →</a>
+  </div>
+  <div style="padding:1.5rem 2rem;background:rgba(5,21,37,.5);border:1px solid rgba(43,188,212,.1);border-radius:4px;display:flex;align-items:center;gap:2rem;transition:border-color .3s" class="reveal">
+    <div style="font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cyan);min-width:120px;flex-shrink:0">National Geographic<br><span style="color:var(--muted);font-size:.58rem">December 2024</span></div>
+    <p style="font-size:.9rem;color:var(--foam);font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.4">Inside the deep-sea monitoring network watching over the Pacific</p>
+    <a href="#" style="margin-left:auto;color:var(--cyan);text-decoration:none;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;white-space:nowrap;flex-shrink:0">Read →</a>
+  </div>
+  <div style="padding:1.5rem 2rem;background:rgba(5,21,37,.5);border:1px solid rgba(43,188,212,.1);border-radius:4px;display:flex;align-items:center;gap:2rem;transition:border-color .3s" class="reveal">
+    <div style="font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cyan);min-width:120px;flex-shrink:0">Reuters<br><span style="color:var(--muted);font-size:.58rem">November 2024</span></div>
+    <p style="font-size:.9rem;color:var(--foam);font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.4">Blue Earth Foundation wins UN Environment Award for Marine Conservation</p>
+    <a href="#" style="margin-left:auto;color:var(--cyan);text-decoration:none;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;white-space:nowrap;flex-shrink:0">Read →</a>
+  </div>
+  <div style="padding:1.5rem 2rem;background:rgba(5,21,37,.5);border:1px solid rgba(43,188,212,.1);border-radius:4px;display:flex;align-items:center;gap:2rem;transition:border-color .3s" class="reveal">
+    <div style="font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cyan);min-width:120px;flex-shrink:0">TIME<br><span style="color:var(--muted);font-size:.58rem">October 2024</span></div>
+    <p style="font-size:.9rem;color:var(--foam);font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.4">The 25 most influential environmental nonprofits of 2024</p>
+    <a href="#" style="margin-left:auto;color:var(--cyan);text-decoration:none;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;white-space:nowrap;flex-shrink:0">Read →</a>
+  </div>
+  <div style="padding:1.5rem 2rem;background:rgba(5,21,37,.5);border:1px solid rgba(43,188,212,.1);border-radius:4px;display:flex;align-items:center;gap:2rem;transition:border-color .3s" class="reveal">
+    <div style="font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cyan);min-width:120px;flex-shrink:0">CNN<br><span style="color:var(--muted);font-size:.58rem">September 2024</span></div>
+    <p style="font-size:.9rem;color:var(--foam);font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.4">A new coral micro-fragmentation technique is regrowing reefs faster than ever</p>
+    <a href="#" style="margin-left:auto;color:var(--cyan);text-decoration:none;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;white-space:nowrap;flex-shrink:0">Read →</a>
+  </div></div>
+</div>
+
+
+
+<footer class="site-footer">
+  <div class="footer-wave-wrap">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="height:60px">
+      <path d="M0 40 C360 0,720 80,1080 40 C1260 20,1380 60,1440 40 L1440 80 L0 80 Z" fill="rgba(14,79,110,0.15)"/>
+    </svg>
+  </div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-text">◈ BLUE EARTH</div>
+      <p class="footer-brand-desc">Fighting for the ocean since 2018. 501(c)(3) nonprofit registered in California.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-lnk">Twitter</a>
+        <a href="#" class="social-lnk">Instagram</a>
+        <a href="#" class="social-lnk">YouTube</a>
+        <a href="#" class="social-lnk">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="../index.html">Home</a>
+        <a href="index.html#mission">Mission</a>
+        <a href="index.html#impact">Impact</a>
+        <a href="gallery-page.html">Gallery</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="ocean-facts.html">Ocean Facts</a>
+        <a href="blog.html">Blog</a>
+        <a href="research.html">Research</a>
+        <a href="press.html">Press</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="corporate.html">Corporate</a>
+        <a href="contact.html">Contact</a>
+        <a href="newsletter.html">Newsletter</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-bar">
+    <span>© 2025 Blue Earth Foundation. All rights reserved.</span>
+    <span><a href="privacy.html" style="color:inherit;text-decoration:none">Privacy</a> · <a href="terms.html" style="color:inherit;text-decoration:none">Terms</a> · <a href="impact-report.html" style="color:inherit;text-decoration:none">Impact Report</a></span>
+  </div>
+  <div class="footer-fish-anim">
+    <svg viewBox="0 0 60 30" fill="none"><path d="M8 15 C15 8,40 7,52 15 C40 23,15 22,8 15 Z" fill="rgba(43,188,212,0.3)"/><path d="M8 15 L0 9 L0 21 Z" fill="rgba(26,127,168,0.35)"/><circle cx="43" cy="14" r="3" fill="rgba(77,232,194,0.6)"/><circle cx="43" cy="14" r="1" fill="rgba(2,13,26,0.8)"/></svg>
+  </div>
+</footer>
+
+<script src="../shared.js" defer></script>
+</body>
+</html>
